@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('layouts/main');
 });
 
-Route::group(['prefix' => 'admin', 'middleware' =>'auth'], function() {
-   Route::get('admin/youtube', 'Admin\HomepageController@add');
+/* データベースを介さないので middleware=>authを使わない */
+Route::group(['prefix' => 'admin'], function() { 
+    Route::get('homepage/access','Admin\HomepageController@access');
+    Route::get('homepage/insta', 'Admin\HomepageController@insta');
+    Route::get('homepage/introduction','Admin\HomepageController@introduction');
+    Route::get('homepage/youtube', 'Admin\HomepageController@youtube');
+   
 });
