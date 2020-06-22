@@ -1,13 +1,22 @@
-body{
+wrapper{
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
+  clear: both;
+  
 }
 
 globalnav {
   padding:10px;
-  
+  float: left;
+}
+p {
+  font-size: 36px;
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  border-bottom: 1px solid #cccccc;
+  width: 220px;
 }
 .li{
   list-style: none;
