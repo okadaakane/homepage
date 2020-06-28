@@ -11,16 +11,9 @@
 <!-- style -->
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
 <style>
-        body{
-        color: #3366FF;
-        background-image: url(../image/mashelogo.JPG);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: 50%;
-        display: inline;
-        font-family: "Permanent Marker";font-size: 15px;
-       }
+body{
+    background-image: url(../image/mashelogo.JPG);
+}
 </style>
 </head>
 
@@ -37,8 +30,8 @@
                 <li><a href="{{ url('admin/homepage/youtube') }}">Youtube</a></li>
                 <li><a href="{{ url('admin/homepage/access') }}">Access</a></li>
                 <li><a href="https://www.osaka-dance.com/">Impress</a></li>
-                <li><a href="https://dancestudio-obt.amebaownd.com/">Dance studio OBT</a></li>
-                
+                <li><a href="https://dancestudio-obt.amebaownd.com/">dance studio OBT</a></li>
+                <li><a href="{{ url('admin/homepage/contact') }}">Contact us</a></li>
                 <li><a href="/">Top</a>に戻る</li>
             </div>
         </div>
@@ -49,9 +42,9 @@
 <main>@yield('content')</main>
 </body>
 <footer>
-<ul class ="sns_share_button">
+<!-- <ul class ="sns_share_button">
         <li class="pocket"><a href="http://getpocket.com/edit?url={https://89cd654026764c568fcfb68e3cd9aafc.vfs.cloud9.us-east-2.amazonaws.com/}&title={masheriami_official}" rel="nofollow" rel="nofollow" target="_blank">pocket</a></li>
         <li class=""></li>
-    </ul>
+    </ul> -->
 </footer>
 </html>

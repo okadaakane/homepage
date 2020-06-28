@@ -31,6 +31,10 @@ class HomepageController extends Controller
     {
        return view('admin.homepage.youtube');
     }
+    public function contact()
+    {
+        return view('admin.homepage.contact');
+    }
 }
 
 ?>

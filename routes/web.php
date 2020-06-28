@@ -21,5 +21,5 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('homepage/insta', 'Admin\HomepageController@insta');
     Route::get('homepage/introduction','Admin\HomepageController@introduction');
     Route::get('homepage/youtube', 'Admin\HomepageController@youtube');
-   
+    Route::get('homepage/contact', 'Admin\HomepageController@contact');
 });

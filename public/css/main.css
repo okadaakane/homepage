@@ -1,19 +1,39 @@
+/*classには.idには#*/
+  
+body{
+  color: black;
+  background-image: url(../image/mashelogo.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 50%;
+  display: inline;
+  font-family: "Permanent Marker";font-size: 15px;
+}
 
-wrapper{
+h1 {
+  float: left;
+}
+.wrapper{
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
   clear: both;
-
+  font-size: 26px;
+  color: #3366FF;
+  line-height: nomal;
 }
-
-globalnav {
-  padding:10px;
+.icon:before{
+  content: "";
+  padding-right: 10px;
+  border-left: 7px solid #CEF9DC;
+}
+.globalnav {
+  padding-right: 10px;
   float: left;
 }
 p {
   font-size: 36px;
-  
   color: black;
   border-bottom: 1px solid #cccccc;
   width: 220px;
@@ -80,20 +100,21 @@ p {
   transition: .3s ease-in-out;/*滑らかに表示*/
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);/*左に隠しておく*/
-  font-size: 150%;
+ 
   line-height: 400%;
  
 }
 /*globalnavのリンクの色*/
 #nav-content a:link { /*アクセスしたことのないリンクblue*/
-color:#3366FF; 
+  color:#3366FF; 
+
 }
 #nav-content a:hover {/*マウスが上に乗っている状態pink*/
-color:#FF0099;
-text-decoration:underline;
+  color:#FF0099;
+  text-decoration:underline;
 }
 #nav-content a:visited { /*アクセスしたことのあるリンク紫*/
-color: #996699;
+  color: #996699;
 }
 /*チェックが入ったらもろもろ表示*/
 #nav-input:checked ~ #nav-close {
@@ -108,6 +129,6 @@ color: #996699;
 }
 
 
-ul{
+.ul{
     list-style: none;
 }
