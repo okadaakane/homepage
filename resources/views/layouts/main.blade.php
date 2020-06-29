@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Masheriami_official</title>
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -26,13 +26,15 @@ body{
             <label id="nav-open" for="nav-input"><span></span></label>
             <label class="nav-unshown" id="nav-close" for="nav-input"></label>
             <div id="nav-content">
-                <li><a href="{{ url('admin/homepage/introduction') }}">Introduction</a></li>
-                <li><a href="{{ url('admin/homepage/youtube') }}">Youtube</a></li>
-                <li><a href="{{ url('admin/homepage/access') }}">Access</a></li>
-                <li><a href="https://www.osaka-dance.com/">Impress</a></li>
-                <li><a href="https://dancestudio-obt.amebaownd.com/">dance studio OBT</a></li>
-                <li><a href="{{ url('admin/homepage/contact') }}">Contact us</a></li>
-                <li><a href="/">Top</a>に戻る</li>
+                <ul class="menu">
+                    <li><a href="{{ url('admin/homepage/introduction') }}">Introduction</a></li>
+                    <li><a href="{{ url('admin/homepage/youtube') }}">Youtube</a></li>
+                    <li><a href="{{ url('admin/homepage/access') }}">Access</a></li>
+                    <li><a href="https://www.osaka-dance.com/">Impress</a></li>
+                    <li><a href="https://dancestudio-obt.amebaownd.com/">dance studio OBT</a></li>
+                    <li><a href="{{ url('admin/homepage/contact') }}">Contact us</a></li>
+                    <li><a href="/">Top</a></li>
+                </ul>
             </div>
         </div>
     </ul>

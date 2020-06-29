@@ -2,17 +2,31 @@
   
 body{
   color: black;
-  background-image: url(../image/mashelogo.JPG);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: 50%;
   display: inline;
-  font-family: "Permanent Marker";font-size: 15px;
+  font-size: 15px;
+  transform: translate(-50%,-50%);
+
 }
 
 h1 {
-  float: left;
+  font-family: "Permanent Marker";       /*icon付タイトルのこと*/
+  border-bottom: 1px solid #cccccc;
+  padding: 20 100 5 20px;
+  width: 25%;
+}
+h2 { 
+  font-family: sans-serif;               /*youtube作品名やイントラ名*/
+  padding: 20 100 5 100px;
+}
+h3 {
+  padding: 0 100 0 100px;               /*insta埋め込み*/
+}
+iframe{
+  padding: 5 100 30 130px;　　　　　　　 /*youtube埋め込み*/
 }
 .wrapper{
   max-width: 50%;
@@ -26,19 +40,18 @@ h1 {
 .icon:before{
   content: "";
   padding-right: 10px;
-  border-left: 7px solid #CEF9DC;
+  border-left: 10px solid #CEF9DC;
 }
 .globalnav {
   padding-right: 10px;
   float: left;
 }
-p {
-  font-size: 36px;
-  color: black;
-  border-bottom: 1px solid #cccccc;
-  width: 220px;
+
+ul.menu {
+  font-family: "Permanent Marker";
+  
 }
-.li{
+li{
   list-style: none;
 }
 #nav-drawer {
@@ -100,8 +113,7 @@ p {
   transition: .3s ease-in-out;/*滑らかに表示*/
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);/*左に隠しておく*/
- 
-  line-height: 400%;
+  line-height: 300%;
  
 }
 /*globalnavのリンクの色*/

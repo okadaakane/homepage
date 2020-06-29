@@ -1,4 +1,6 @@
 @extends('layouts.main')
+<h1 class="icon">Contact us</h1>
 @section('content')
 
-<p class="icon">Contact us</h>
+
+<form action="kakuninn" method="get">
