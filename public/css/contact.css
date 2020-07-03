@@ -1,0 +1,55 @@
+.form {
+    background-color: #eaeaea;
+    margin: 3%;
+    padding: 3 10 3 3%;
+    
+}
+.form dl dt {
+    width: 165px;
+    padding: 10px 0;
+}
+.form dd {
+    padding: 10px 0;
+}
+.form .name {
+    width: 250px;
+    height: 30px;
+}
+.form .email {
+    width: 250px;
+    height: 30px;
+   
+}
+.form .type{
+    width: 200px;
+    height: 30px;
+}
+.form .message {
+   width: 370px;
+    height: 200px;
+}
+.form .required:after {
+    content: " * ";
+    color: #ff0000;
+}
+.form button {
+    background-color: #33CCFF;
+    color: #ffffff;
+    width: 130px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 13%;          /*ボタンの角を少し丸く*/
+    border: 1px solid #3399FF;
+    margin-left: 500px;
+}
+.form button:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #33CCFF;
+    cursor: pointer;
+}
+.form .attention {
+    
+}

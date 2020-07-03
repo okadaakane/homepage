@@ -10,16 +10,16 @@
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 <!-- style -->
 <link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
+<link href="{{ secure_asset('css/contact.css') }}" rel="stylesheet">
 <style>
 body{
     background-image: url(../image/mashelogo.JPG);
 }
 </style>
 </head>
-
 <body>
- <div class="wrapper">
-    <!-- gloval navbar -->
+<div class="wrapper">
+    <!-- gloval navbar --> 
     <ul class="globalnav">
         <div id="nav-drawer">
             <input id="nav-input" type="checkbox" class="nav-unshown">

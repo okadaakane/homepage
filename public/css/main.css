@@ -11,6 +11,10 @@ body{
   transform: translate(-50%,-50%);
 
 }
+.globalnav {
+  padding-right: 10px;
+  
+}
 
 h1 {
   font-family: "Permanent Marker";       /*icon付タイトルのこと*/
@@ -36,15 +40,13 @@ iframe{
   font-size: 26px;
   color: #3366FF;
   line-height: nomal;
+  float: left;
+  position: fixed;
 }
 .icon:before{
   content: "";
   padding-right: 10px;
   border-left: 10px solid #CEF9DC;
-}
-.globalnav {
-  padding-right: 10px;
-  float: left;
 }
 
 ul.menu {
