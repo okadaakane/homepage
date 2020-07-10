@@ -22,4 +22,8 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('homepage/introduction','Admin\HomepageController@introduction');
     Route::get('homepage/youtube', 'Admin\HomepageController@youtube');
     Route::get('homepage/contact', 'Admin\HomepageController@contact');
+    Route::post('homepage/respons', 'Admin\HomepageController@response')->middleware('auth');
+    Route::get('homepage/success', 'Admin\HomepageController@success');
 });
+
+Route::get('/home', 'HomeController@index')->name('home');

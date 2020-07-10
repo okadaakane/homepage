@@ -2,7 +2,8 @@
 <h1 class="icon">Contact us</h1>
 @section('content')
 <div class="form">
-    <form>
+     <form action="{{ action('Admin\HomepageController@response') }}" method="post" enctype="multipart/form-data">
+         @csrf
         <dl>
             <dt><span class="required">お名前</span></dt>
             <dd><input type="text" name="name" class="name" required></dd>
@@ -20,6 +21,7 @@
             <dt>お問い合わせ内容</dt>
             <dd><textarea name="message" class="message"></textarea></dd>
         </dl>
+         {{ csrf_field() }}
         <button type="submit" class="btn">送信</button>
     </form>
     <div class="attention">
@@ -28,3 +30,4 @@
 </div>
 
 <form action="kakuninn" method="get">
+@endsection

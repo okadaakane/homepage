@@ -1,54 +1,58 @@
 /*classには.idには#*/
-  
-body{
-  color: black;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: 50%;
-  display: inline;
-  font-size: 15px;
-  transform: translate(-50%,-50%);
-
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
 }
-.globalnav {
-  padding-right: 10px;
-  
+header {
+  padding:10px;
 }
 
 h1 {
   font-family: "Permanent Marker";       /*icon付タイトルのこと*/
-  border-bottom: 1px solid #cccccc;
   padding: 20 100 5 20px;
   width: 25%;
+  float: left;
+  margin: auto 0;
+  font-size: auto;
+/*  border-bottom: 1px solid #cccccc; */
+}
+.y-c{
+  margin: auto;
+  padding: auto;
+  float: left;
+  clear: fixed;
 }
 h2 { 
-  font-family: sans-serif;               /*youtube作品名やイントラ名*/
-  padding: 20 100 5 100px;
+  font-family: "Permanent Marker";
+  padding: 20 100 5 100px;             /*youtube作品名やイントラ名*/
+  clear: both;
 }
 h3 {
-  padding: 0 100 0 100px;               /*insta埋め込み*/
+  padding: 0 100 0 100px;                /*insta埋め込み*/
 }
+
 iframe{
-  padding: 5 100 30 130px;　　　　　　　 /*youtube埋め込み*/
+  padding: 5 100 30 130px;  　　　　　　 /*youtube埋め込み*/
 }
 .wrapper{
-  max-width: 50%;
   margin: 0 auto;
-  text-align: center;
-  clear: both;
   font-size: 26px;
   color: #3366FF;
-  line-height: nomal;
-  float: left;
-  position: fixed;
+  clear: both;
+  padding-right: 10%; 
 }
+
 .icon:before{
   content: "";
   padding-right: 10px;
   border-left: 10px solid #CEF9DC;
 }
-
+/*.icon2:before{*/
+/*  content:"";*/
+/*  padding-left: 10px;*/
+/*  border-left: 10px solid #FFCCCC;  */
+/*}*/
 ul.menu {
   font-family: "Permanent Marker";
   
@@ -144,5 +148,10 @@ li{
 
 
 .ul{
-    list-style: none;
+  list-style: none;
+}
+table{                             /*accessのテーブル*/
+  float: left;
+  clear: both;
+  margin: 0% auto;
 }

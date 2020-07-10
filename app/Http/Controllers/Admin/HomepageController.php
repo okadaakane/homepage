@@ -35,6 +35,18 @@ class HomepageController extends Controller
     {
         return view('admin.homepage.contact');
     }
+        public function response()
+    {
+        return view('admin.homepage.response');
+    }
+     public function submit()
+    {
+        return view('admin/homepage/submit');
+    }
+    public function success()
+    {
+        return redirect('admin/homepage/success');
+    }
+    //  \Debugbar::info();
 }
-
 ?>
