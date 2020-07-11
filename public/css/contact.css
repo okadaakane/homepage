@@ -1,6 +1,18 @@
+p {
+    margin: 18 10 5 10%;
+}
+a:link {
+    color: #3366FF;
+}
+a:hover{
+    color:#FF0099;
+}
+a:visited {
+     color:#996699;
+}
 .form {
     background-color: #eaeaea;
-    margin: 8%;
+    margin: 0 0 0 8%;
     padding: 3 20 3 3%;
     width: 80%;
     

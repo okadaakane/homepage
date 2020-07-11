@@ -1,6 +1,7 @@
 @extends('layouts.main')
 <h1 class="icon">Contact us</h1>
 @section('content')
+<p><a href="https://www.instagram.com/masheriami_official/">Instagram</a>はこちら!</p>
 <div class="form">
      <form action="{{ action('Admin\HomepageController@response') }}" method="post" enctype="multipart/form-data">
          @csrf
@@ -25,9 +26,8 @@
         <button type="submit" class="btn">送信</button>
     </form>
     <div class="attention">
-        <p>※「<span class="required"></span>」のついている項目は必須項目です。<br>※MasheriamiのinstagramアカウントからのDM（ダイレクトメッセージ）による問合せも可能です。</p>
+        <p><br>※「<span class="required"></span>」のついている項目は必須項目です。
+        <br>※MasheriamiのinstagramアカウントからのDM（ダイレクトメッセージ）による問合せが可能です。<br></p>
     </div>
 </div>
-
-<form action="kakuninn" method="get">
 @endsection
