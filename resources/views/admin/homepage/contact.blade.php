@@ -27,7 +27,7 @@
     </form>
     <div class="attention">
         <p><br>※「<span class="required"></span>」のついている項目は必須項目です。
-        <br>※MasheriamiのinstagramアカウントからのDM（ダイレクトメッセージ）による問合せが可能です。<br></p>
+        <br>※MasheriamiのinstagramアカウントからDM（ダイレクトメッセージ）による問合せが可能です。<br></p>
     </div>
 </div>
 @endsection
